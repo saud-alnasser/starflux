@@ -1,0 +1,6 @@
+'📌 area: framework':
+  - any: ['packages/framework/**/*']
+
+'📚 area: documentation':
+  - any: ['www/**/*']
+  - any: ['**/*.md']

@@ -1,0 +1,22 @@
+{
+  "name": "@test/framework",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "a package that will be used by developers to test new features",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon ./src/index.ts",
+    "lint": "eslint --fix src"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@starflux/framework": "workspace:*",
+    "discord.js": "^14.7.1"
+  }
+}

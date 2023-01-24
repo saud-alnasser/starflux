@@ -1,0 +1,81 @@
+# credits
+# https://github.com/trpc/trpc/blob/main/.github/ISSUE_TEMPLATE
+# https://github.com/t3-oss/create-t3-app/tree/next/.github/ISSUE_TEMPLATE
+
+name: 🐞 bug report
+description: create a bug report to help us improve
+title: 'bug: '
+labels: ['🐞 type: bug', '❔ flag: unconfirmed', '📝 flag: needs review']
+body:
+  - type: dropdown
+    id: affected-packages
+    attributes:
+      label: Which @starflux/* package(s) are the source of the bug?
+      multiple: true
+      options:
+        - 'www'
+        - 'framework'
+
+  - type: dropdown
+    id: is-regression
+    attributes:
+      label: Is this a regression?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: if this is a regress mention the version(s) in which the bug didn't not occur on
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the bug, as well as what you expected to happen when encountering it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: To reproduce
+      description: Describe how to reproduce your bug. Steps, code snippets, reproduction repos etc.
+    validations:
+      required: true
+
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: If applicable, please provide a link to a minimal reproduction of the bug
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Provide environment information
+      description: |
+        Run this command in your project root and paste the results:
+        ```bash
+        npx envinfo --system --binaries
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Additional information
+      description: Add any other information related to the bug here, screenshots if applicable.
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 👨‍👧‍👦 Contributing
+      description: Would you like to implement fix this bug?
+      options:
+        - label: 🙋‍♂️ Yes, i will create a pull request fixing this bug!

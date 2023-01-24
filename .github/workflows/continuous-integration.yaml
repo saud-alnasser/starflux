@@ -1,0 +1,89 @@
+name: 'continuous integration'
+
+on:
+  pull_request:
+    types: ['opened', 'reopened', 'synchronize', 'edited']
+
+jobs:
+  lint:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: '☁️ checkout repository'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: '🛠️ setup pnpm'
+        uses: pnpm/action-setup@v2
+
+      - name: '🔧 setup node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: '📦 install dependencies'
+        run: pnpm install --frozen-lockfile
+
+      - name: '📝 lint pull request'
+        uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: '📃 lint commits'
+        uses: aevea/commitsar@v0.20.1
+
+      - name: '✔️ lint code'
+        run: pnpm lint
+
+  test:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: '☁️ checkout repository'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: '🛠️ setup pnpm'
+        uses: pnpm/action-setup@v2
+
+      - name: '🔧 setup node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: '📦 install dependencies'
+        run: pnpm install --frozen-lockfile
+
+      - name: '🔍 test'
+        run: pnpm test
+
+  build:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: '☁️ checkout repository'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: '🛠️ setup pnpm'
+        uses: pnpm/action-setup@v2
+
+      - name: '🔧 setup node'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: '📦 install dependencies'
+        run: pnpm install --frozen-lockfile
+
+      - name: '🚀 build'
+        run: pnpm build

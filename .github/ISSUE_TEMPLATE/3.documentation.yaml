@@ -1,0 +1,41 @@
+# credits
+# https://github.com/trpc/trpc/blob/main/.github/ISSUE_TEMPLATE
+# https://github.com/t3-oss/create-t3-app/tree/next/.github/ISSUE_TEMPLATE
+
+name: 📚 documentation
+description: request changes related to the documentation
+title: 'docs: '
+labels: ['📚 area: documentation', '📝 flag: needs review']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Our documentation is far from perfect and needs improvements.
+        Do you see possible enhancements you'd like to share? Please file them here!
+        **Note:** For simple typos etc, please directly create a pull request fixing them instead.
+
+  - type: textarea
+    attributes:
+      label: Area of Improvement
+      placeholder: I would like to see more in-depth API documentation for how to use batch-links.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Link to related docs
+      description: Does documentation already exist? Please link that here.
+      placeholder: https://staflux.vercel.app
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other information that may help us understand here.
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 👨‍👧‍👦 Contributing
+      description: Would you like to improve the documentation yourself?
+      options:
+        - label: 🙋‍♂️ Yes, i will create a pull request implementing the suggested changes!

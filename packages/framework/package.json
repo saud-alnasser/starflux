@@ -1,0 +1,30 @@
+{
+  "name": "@starflux/framework",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "a framework built on top of discord.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint --fix src",
+    "test": "vitest"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "framework",
+    "bot"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "eslint": "^8.34.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.5"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}

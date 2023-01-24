@@ -1,0 +1,37 @@
+{
+  "cSpell.words": [
+    "aevea",
+    "alnasser",
+    "amannn",
+    "autobuild",
+    "codeql",
+    "commitizen",
+    "commitlint",
+    "Csvg",
+    "dimm",
+    "envinfo",
+    "FBCA",
+    "Parens",
+    "pascalgn",
+    "plusplus",
+    "pnpm",
+    "poweredby",
+    "roadmap",
+    "saud",
+    "starflux",
+    "treeshake",
+    "tsdoc",
+    "tsup",
+    "turborepo",
+    "vitepress"
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ]
+}

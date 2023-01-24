@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "root": true,
+  "extends": ["../.eslintrc.json"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
