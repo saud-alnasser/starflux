@@ -78,11 +78,11 @@ importers:
   www:
     specifiers:
       typescript: ^4.9.5
-      vitepress: 1.0.0-alpha.45
+      vitepress: 1.0.0-alpha.46
       vue: ^3.2.47
     devDependencies:
       typescript: 4.9.5
-      vitepress: 1.0.0-alpha.45
+      vitepress: 1.0.0-alpha.46
       vue: 3.2.47
 
 packages:
@@ -7572,10 +7572,10 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.45:
+  /vitepress/1.0.0-alpha.46:
     resolution:
       {
-        integrity: sha512-8AVWdymQqBUPmXmAbpapDDg18iDmkNJ47l5eOklBlAjj3n8P3zDAsBhOWSQ6+Nvm6+/GaZATyAvsrg47JD5Idw==,
+        integrity: sha512-HiKiHzC0iTPsRsKs8XcsMeMzCpcCt5LWcX9mpDr288Ju+nQf1G8A2+Wm44ZkBsVv4EHxFK4ChmWyZrL1OJUXpg==,
       }
     hasBin: true
     dependencies:
