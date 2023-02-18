@@ -1,4 +1,4 @@
-name: 'codeql analysis'
+name: '🔍 codeql analysis'
 
 on:
   push:
