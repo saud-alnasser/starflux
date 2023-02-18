@@ -5,60 +5,58 @@ updates:
   - directory: /
     package-ecosystem: github-actions
     schedule:
-      interval: weekly 
+      interval: weekly
     labels:
       - '📦 dependencies'
     commit-message:
-      prefix: fix 
-      prefix-development: chore 
+      prefix: fix
+      prefix-development: chore
       include: scope
 
   # maintain dependencies for root
   - directory: /
-    package-ecosystem: npm 
+    package-ecosystem: npm
     schedule:
-      interval: weekly 
+      interval: weekly
     labels:
       - '📦 dependencies'
     commit-message:
-      prefix: fix 
-      prefix-development: chore 
-      include: scope 
+      prefix: fix
+      prefix-development: chore
+      include: scope
 
   # maintain dependencies for @starflux/www
   - directory: /www/
-    package-ecosystem: npm 
+    package-ecosystem: npm
     schedule:
-      interval: weekly 
+      interval: weekly
     labels:
       - '📦 dependencies'
     commit-message:
-      prefix: fix 
-      prefix-development: chore 
-      include: scope 
+      prefix: fix
+      prefix-development: chore
+      include: scope
 
   # maintain dependencies for @starflux/framework
   - directory: /packages/framework/
-    package-ecosystem: npm 
+    package-ecosystem: npm
     schedule:
-      interval: weekly 
+      interval: weekly
     labels:
       - '📦 dependencies'
     commit-message:
-      prefix: fix 
-      prefix-development: chore 
-      include: scope 
+      prefix: fix
+      prefix-development: chore
+      include: scope
 
   # maintain dependencies for @test/framework
   - directory: /packages/playground/
-    package-ecosystem: npm 
+    package-ecosystem: npm
     schedule:
-      interval: weekly 
+      interval: weekly
     labels:
       - '📦 dependencies'
     commit-message:
-      prefix: fix 
-      prefix-development: chore 
-      include: scope 
-
-
+      prefix: fix
+      prefix-development: chore
+      include: scope
