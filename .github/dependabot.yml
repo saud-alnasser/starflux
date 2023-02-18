@@ -7,55 +7,20 @@ updates:
     schedule:
       interval: weekly
     labels:
-      - '📦 dependencies'
+      - '📦 flag: dependencies'
     commit-message:
       prefix: fix
       prefix-development: chore
       include: scope
 
-  # maintain dependencies for root
+  # maintain dependencies for npm packages
   - directory: /
     package-ecosystem: npm
+    versioning-strategy: increase
     schedule:
       interval: weekly
     labels:
-      - '📦 dependencies'
-    commit-message:
-      prefix: fix
-      prefix-development: chore
-      include: scope
-
-  # maintain dependencies for @starflux/www
-  - directory: /www/
-    package-ecosystem: npm
-    schedule:
-      interval: weekly
-    labels:
-      - '📦 dependencies'
-    commit-message:
-      prefix: fix
-      prefix-development: chore
-      include: scope
-
-  # maintain dependencies for @starflux/framework
-  - directory: /packages/framework/
-    package-ecosystem: npm
-    schedule:
-      interval: weekly
-    labels:
-      - '📦 dependencies'
-    commit-message:
-      prefix: fix
-      prefix-development: chore
-      include: scope
-
-  # maintain dependencies for @test/framework
-  - directory: /packages/playground/
-    package-ecosystem: npm
-    schedule:
-      interval: weekly
-    labels:
-      - '📦 dependencies'
+      - '📦 flag: dependencies'
     commit-message:
       prefix: fix
       prefix-development: chore
