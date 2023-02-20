@@ -1,6 +1,22 @@
 '📌 area: framework':
   - any: ['packages/framework/**/*']
 
-'📚 area: documentation':
+'📌 area: www':
+  - any: ['www/**/*']
+
+'📚 type: documentation':
   - any: ['www/**/*']
   - any: ['**/*.md']
+
+'🔧 type: development tools':
+  - any: ['.changeset/**/*']
+  - any: ['.github/**/*']
+  - any: ['.husky/**/*']
+  - any: ['.*attributes']
+  - any: ['.*ignore']
+  - any: ['.*rc']
+  - any: ['.*rc.*']
+  - any: ['*.config.*']
+
+'📦 flag: dependencies':
+  - any: ['pnpm-lock.yaml']
