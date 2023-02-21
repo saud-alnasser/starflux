@@ -2,7 +2,7 @@
 # https://github.com/trpc/trpc/blob/main/.github/ISSUE_TEMPLATE
 # https://github.com/t3-oss/create-t3-app/tree/next/.github/ISSUE_TEMPLATE
 
-name: 🐞 bug report
+name: 🐞 Bug Report
 description: create a bug report to help us improve
 title: 'bug: '
 labels: ['🐞 type: bug', '❔ flag: unconfirmed', '📝 flag: needs review']
@@ -27,13 +27,13 @@ body:
       required: true
 
   - type: textarea
-    id: description
+    id: regress-description
     attributes:
       label: Description
       description: if this is a regress mention the version(s) in which the bug didn't not occur on
 
   - type: textarea
-    id: description
+    id: bug-description
     attributes:
       label: Describe the bug
       description: A clear and concise description of the bug, as well as what you expected to happen when encountering it.
@@ -41,7 +41,7 @@ body:
       required: true
 
   - type: textarea
-    id: reproduce
+    id: reproduction-steps
     attributes:
       label: To reproduce
       description: Describe how to reproduce your bug. Steps, code snippets, reproduction repos etc.
@@ -49,7 +49,7 @@ body:
       required: true
 
   - type: input
-    id: reproduction
+    id: reproduction-link
     attributes:
       label: Reproduction
       description: If applicable, please provide a link to a minimal reproduction of the bug

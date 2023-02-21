@@ -1,3 +1,8 @@
+---
+title: '[build|chore|ci|docs|feat|fix|perf|refactor|revert]: '
+labels: ['📝 flag: needs review']
+---
+
 Closes <!-- #issues -->
 
 ## 🎯 Changes
