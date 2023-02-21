@@ -5,8 +5,8 @@
   - any: ['www/**/*']
 
 '📚 type: documentation':
-  - any: ['www/**/*']
   - any: ['**/*.md']
+  - any: ['**/*.mdx']
 
 '🔧 type: development tools':
   - any: ['.changeset/**/*']
