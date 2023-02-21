@@ -2,10 +2,10 @@
 # https://github.com/trpc/trpc/blob/main/.github/ISSUE_TEMPLATE
 # https://github.com/t3-oss/create-t3-app/tree/next/.github/ISSUE_TEMPLATE
 
-name: 📚 documentation
+name: 📚 Documentation
 description: request changes related to the documentation
 title: 'docs: '
-labels: ['📚 area: documentation', '📝 flag: needs review']
+labels: ['📚 type: documentation', '📝 flag: needs review']
 body:
   - type: markdown
     attributes:

@@ -2,7 +2,7 @@
 # https://github.com/trpc/trpc/blob/main/.github/ISSUE_TEMPLATE
 # https://github.com/t3-oss/create-t3-app/tree/next/.github/ISSUE_TEMPLATE
 
-name: 🧩 feature request
+name: 🧩 Feature Request
 description: suggest an idea for this project
 title: 'feat: '
 labels: ['✨ type: enhancement', '📝 flag: needs review']
