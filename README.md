@@ -7,7 +7,7 @@ discord bots by providing a simple and declarative interface.
 
 ## Getting Started ✨
 
-⚠️ The `starflux` framework is not released yet, it is in early development ⚠️
+⚠️ The `starflux` framework is not production ready ⚠️
 
 ## Community 🌍
 
