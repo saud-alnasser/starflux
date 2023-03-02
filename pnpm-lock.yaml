@@ -79,11 +79,11 @@ importers:
   www:
     specifiers:
       typescript: ^4.9.5
-      vitepress: 1.0.0-alpha.48
+      vitepress: 1.0.0-alpha.49
       vue: ^3.2.47
     devDependencies:
       typescript: 4.9.5
-      vitepress: 1.0.0-alpha.48
+      vitepress: 1.0.0-alpha.49
       vue: 3.2.47
 
 packages:
@@ -5453,8 +5453,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.48:
-    resolution: {integrity: sha512-vu9J6Eg1l+o33lfDAMD9+cxomMNQGNQEW/GPu32tkffagMBxoBqhzxfqjaOqtTQ2VdS+dauOdROtrWQrElyivw==}
+  /vitepress/1.0.0-alpha.49:
+    resolution: {integrity: sha512-3nUZJow4qL8NHRWYatqqVj45AJDxWst/TuOj+IbQRhxesEswa+Fpwayj9/FxzRzBl665fuiG5y+QeVhOeUm0OA==}
     hasBin: true
     dependencies:
       '@docsearch/css': 3.3.3
